@@ -1,0 +1,15 @@
+node_modules
+dist
+coverage
+*.local
+.DS_Store
+
+# Optional locally-synced v86 runtime artifacts (see scripts/sync-v86.mjs).
+# The app defaults to CDN-hosted artifacts so these are not required.
+public/v86/
+
+# Local guest images — never commit disk images.
+public/images/
+*.iso
+*.img
+*.bin.tmp

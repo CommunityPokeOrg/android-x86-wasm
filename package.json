@@ -1,0 +1,35 @@
+{
+  "name": "android-x86-wasm",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Experimental in-browser Android x86 virtual machine — v86 WebAssembly emulator with a Unicode half-block terminal rasterizer.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.node.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "sync:v86": "node scripts/sync-v86.mjs"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "v86": "0.5.461"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.15.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "globals": "^15.12.0",
+    "typescript": "~5.6.3",
+    "typescript-eslint": "^8.15.0",
+    "vitest": "^2.1.9"
+  }
+}
